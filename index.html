@@ -1,0 +1,558 @@
+ <!-- Last updated - Tony Waddington, 28/09/16 12.43pm -->
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Minded | Hexagon diagram</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+        /* Paste this css to your style sheet file or under head tag */
+        /* This only works with JavaScript,
+        if it's not present, don't show loader */
+        .no-js #loader { display: none;  }
+        .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+        .se-pre-con {
+        	position: fixed;
+        	left: 0px;
+        	top: 0px;
+        	width: 100%;
+        	height: 100%;
+        	z-index: 9999;
+        	background: url(img/Preloader_3.gif) center no-repeat #fff;
+        }
+    body, html {
+        background-color: #ffffff;
+    }
+</style>
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="css/hexagon-2.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
+        <script src="js/hexagon.js"></script>
+        <script>
+        	//paste this code under head tag or in a seperate js file.
+        	// Wait for window load
+        	$(window).load(function() {
+        		// Animate loader off screen
+        		$(".se-pre-con").fadeOut("slow");;
+        	});
+        </script>
+
+</head>
+
+<body>
+<div class="se-pre-con"></div>
+
+    <header>
+        <h1>Hexagon diagram</h1>
+        <p class="instruction"><i class="fa fa-info-circle" aria-hidden="true"></i> Select the segments of the hexagon to find out more about the profiles</p>
+    </header>
+
+    <div class="svgContainer">
+        <svg version="1.1" id="hexagon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="500px" height="450px" viewBox="0 0 500 450" style="enable-background:new 0 0 500 450;" xml:space="preserve">
+<polygon id="blue"  class="clickable" style="fill:#FFFFFF;" points="243.2,58.1 94.4,144 243.2,229.9 "/>
+<polygon id="green"  class="clickable" style="fill:#FFFFFF;" points="94.4,144 94,144.2 94,316.1 243.2,229.9 "/>
+<polygon id="purple" class="clickable"  style="fill:#FFFFFF;" points="94,316.1 94,316.5 243.2,402.7 243.2,229.9 "/>
+<polygon id="red" class="clickable"  style="fill:#FFFFFF;" points="243.2,402.7 392.4,316.5 392.4,316.1 243.2,229.9 "/>
+<polygon id="orange" class="clickable"  style="fill:#FFFFFF;" points="392,144 243.2,229.9 392.4,316.1 392.4,144.2 "/>
+<polygon id="yellow" class="clickable"  style="fill:#FFFFFF;" points="392,144 243.2,58.1 243.2,229.9 "/>
+<g id="restOfDiagram">
+	<polygon style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;" points="392.4,316.5 392.4,144.2 243.2,58.1
+		94,144.2 94,316.5 243.2,402.7 	"/>
+	<g>
+		<g>
+			<line style="fill:none;stroke:#000000;stroke-linecap:round;stroke-miterlimit:10;" x1="243.2" y1="57.2" x2="243.2" y2="57.7"/>
+
+				<line style="fill:none;stroke:#000000;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:1.004,3.0121;" x1="243.2" y1="60.7" x2="243.2" y2="400.6"/>
+
+				<line style="fill:none;stroke:#000000;stroke-linecap:round;stroke-miterlimit:10;" x1="243.2" y1="402.1" x2="243.2" y2="402.6"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line style="fill:none;stroke:#000000;stroke-linecap:round;stroke-miterlimit:10;" x1="93.7" y1="143.6" x2="94.1" y2="143.8"/>
+
+				<line style="fill:none;stroke:#000000;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:1.004,3.0121;" x1="96.7" y1="145.3" x2="391" y2="315.3"/>
+			<line style="fill:none;stroke:#000000;stroke-linecap:round;stroke-miterlimit:10;" x1="392.3" y1="316" x2="392.8" y2="316.3"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line style="fill:none;stroke:#000000;stroke-linecap:round;stroke-miterlimit:10;" x1="93.7" y1="316.3" x2="94.1" y2="316"/>
+
+				<line style="fill:none;stroke:#000000;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:1.004,3.0121;" x1="96.7" y1="314.5" x2="391" y2="144.6"/>
+
+				<line style="fill:none;stroke:#000000;stroke-linecap:round;stroke-miterlimit:10;" x1="392.3" y1="143.8" x2="392.8" y2="143.6"/>
+		</g>
+	</g>
+	<g id="XMLID_22_">
+		<polygon style="fill:#FFF400;" points="354.8,6.9 343.1,18.6 331.4,6.9 323.9,14.4 335.6,26.1 323.9,37.8 331.4,45.3 343.1,33.6
+			354.8,45.3 362.2,37.8 350.6,26.1 362.2,14.4 		"/>
+	</g>
+	<g id="XMLID_6_">
+		<g id="XMLID_8_">
+			<rect x="17.6" y="200.9" style="fill:#00FFC6;" width="38.3" height="38.3"/>
+		</g>
+	</g>
+	<g id="XMLID_12_">
+		<g id="XMLID_16_">
+			<polygon style="fill:#FFC000;" points="451.1,219.8 431.9,200.7 470.3,200.7 			"/>
+		</g>
+		<g id="XMLID_13_">
+			<polygon style="fill:#FFC000;" points="451.1,239 431.9,219.8 470.3,219.8 			"/>
+		</g>
+	</g>
+	<g id="XMLID_2_">
+		<path id="XMLID_3_" style="fill:#824FF9;" d="M144.9,376.4c-10.6,0-19.2,8.6-19.2,19.2s8.6,19.2,19.2,19.2s19.2-8.6,19.2-19.2
+			S155.5,376.4,144.9,376.4 M144.9,405.2c-5.3,0-9.6-4.3-9.6-9.6c0-5.3,4.3-9.6,9.6-9.6s9.6,4.3,9.6,9.6
+			C154.6,400.9,150.2,405.2,144.9,405.2"/>
+	</g>
+	<path id="XMLID_1_" style="fill:#FF2100;" d="M344.9,376.4c-10.6,0-19.2,8.6-19.2,19.2s8.6,19.2,19.2,19.2s19.2-8.6,19.2-19.2
+		S355.5,376.4,344.9,376.4"/>
+	<g>
+		<path d="M324,436.7l1.2-0.3c0.4,1.6,1.4,2.4,3,2.4c1.5,0,2.7-0.7,2.7-2.1c0-0.8-0.2-1.6-2.7-2.1c-2.3-0.4-3.9-1.2-3.9-3.2
+			s1.7-3.2,3.8-3.2s3.3,1.2,3.8,3.1l-1.2,0.3c-0.3-1.4-1.1-2.3-2.6-2.3s-2.5,0.7-2.5,2c0,1.2,1,1.6,2.8,2c2.4,0.5,3.7,1.4,3.7,3.3
+			c0,2-1.7,3.2-4,3.2C326.1,439.9,324.6,438.9,324,436.7z"/>
+		<path d="M337.7,439.9c-2.6,0-4-2.1-4-4.1c0-2.1,1.5-4.1,4-4.1c2.6,0,4,2.1,4,4.1S340.2,439.9,337.7,439.9z M337.7,438.8
+			c1.7,0,2.8-1.3,2.8-3s-1.2-3-2.8-3c-1.6,0-2.8,1.3-2.8,3C334.9,437.5,336,438.8,337.7,438.8z"/>
+		<path d="M347.1,439.9c-2.6,0-4-2-4-4.1s1.5-4.1,4-4.1c1.8,0,3,1.1,3.4,2.4l-1.1,0.4c-0.4-1-1.2-1.7-2.3-1.7c-1.6,0-2.7,1.3-2.7,3
+			s1.1,3,2.7,3c1.1,0,2-0.7,2.3-1.7l1.1,0.4C350.1,438.8,348.9,439.9,347.1,439.9z"/>
+		<path d="M353.2,428.8c0.5,0,0.9,0.4,0.9,0.9s-0.4,0.9-0.9,0.9s-0.9-0.4-0.9-0.9C352.2,429.2,352.6,428.8,353.2,428.8z
+			 M352.6,431.9h1.2v7.8h-1.2V431.9z"/>
+		<path d="M359,431.6c1.9,0,3.1,1,3.1,2.8v5.2h-1l-0.1-0.8c-0.4,0.6-1.2,1-2.4,1c-1.8,0-2.7-1.1-2.7-2.4c0-1.4,0.9-2.2,3-2.5
+			l2.1-0.3v-0.3c0-1.2-0.6-1.8-1.9-1.8s-1.8,0.7-2,1.6l-1.1-0.3C356.2,432.5,357.3,431.6,359,431.6z M360.9,435.7l-2,0.3
+			c-1.2,0.2-2,0.5-2,1.5c0,0.8,0.7,1.4,1.8,1.4c1.1,0,2.1-0.6,2.1-2v-1.2H360.9z"/>
+		<path d="M364.2,428.5h1.2v11.2h-1.2V428.5z"/>
+	</g>
+	<g>
+		<path d="M95.2,429.4c-2.5,0-4.4,2-4.4,4.7c0,2.8,1.8,4.7,4.4,4.7c1.9,0,3.1-1,3.6-2.5l1.2,0.4c-0.7,2-2.4,3.3-4.8,3.3
+			c-3.3,0-5.7-2.4-5.7-5.8c0-3.3,2.4-5.8,5.6-5.8c2.4,0,4.2,1.4,4.9,3.5l-1.2,0.4C98.3,430.4,97,429.4,95.2,429.4z"/>
+		<path d="M105.6,439.9c-2.6,0-4-2.1-4-4.1c0-2.1,1.5-4.1,4-4.1c2.6,0,4,2.1,4,4.1S108.1,439.9,105.6,439.9z M105.6,438.8
+			c1.7,0,2.8-1.3,2.8-3s-1.2-3-2.8-3c-1.6,0-2.8,1.3-2.8,3C102.8,437.5,103.9,438.8,105.6,438.8z"/>
+		<path d="M112.7,432.9c0.6-0.8,1.5-1.3,2.6-1.3s1.9,0.5,2.3,1.4c0.6-0.8,1.5-1.4,2.7-1.4c1.4,0,2.6,0.8,2.6,2.8v5.3h-1.2v-4.8
+			c0-1.7-0.7-2.1-1.7-2.1c-1.1,0-2.1,0.9-2.1,2.5v4.5h-1.2V435c0-1.7-0.8-2.1-1.7-2.1c-1.1,0-2.1,0.8-2.1,2.5v4.5h-1.2v-7.8h1
+			L112.7,432.9z"/>
+		<path d="M125,431.9h1l0.2,1.2c0.5-0.7,1.4-1.4,2.8-1.4c2.4,0,3.7,2.1,3.7,4.1s-1.2,4.1-3.7,4.1c-1.3,0-2.2-0.6-2.8-1.4v4.5H125
+			V431.9z M128.9,438.8c1.6,0,2.6-1.3,2.6-3c0-1.8-1.1-3.1-2.6-3.1c-1.6,0-2.6,1.3-2.6,3.1S127.3,438.8,128.9,438.8z"/>
+		<path d="M137.4,431.6c1.9,0,3.1,1,3.1,2.8v5.2h-1l-0.1-0.8c-0.4,0.6-1.2,1-2.4,1c-1.8,0-2.7-1.1-2.7-2.4c0-1.4,0.9-2.2,3-2.5
+			l2.1-0.3v-0.3c0-1.2-0.6-1.8-1.9-1.8c-1.3,0-1.8,0.7-2,1.6l-1.1-0.3C134.7,432.5,135.7,431.6,137.4,431.6z M139.4,435.7l-2,0.3
+			c-1.2,0.2-2,0.5-2,1.5c0,0.8,0.7,1.4,1.8,1.4s2.1-0.6,2.1-2L139.4,435.7L139.4,435.7z"/>
+		<path d="M147.3,434.3c-0.2-0.8-0.7-1.5-1.8-1.5c-1.4,0-1.7,0.7-1.7,1.2c0,0.8,0.8,1,2,1.2c1.6,0.3,2.8,0.9,2.8,2.4
+			c0,1.4-1.4,2.4-3,2.4s-2.8-0.8-3.2-2.4l1.1-0.4c0.2,0.7,0.6,1.7,2.1,1.7c1.1,0,1.8-0.4,1.8-1.3c0-0.4-0.1-1-1.8-1.3
+			c-1.6-0.3-2.9-0.8-2.9-2.4c0-1.5,1.3-2.3,2.9-2.3c1.6,0,2.6,0.9,2.9,2.3L147.3,434.3z"/>
+		<path d="M155,434.3c-0.2-0.8-0.7-1.5-1.8-1.5c-1.4,0-1.7,0.7-1.7,1.2c0,0.8,0.8,1,2,1.2c1.6,0.3,2.8,0.9,2.8,2.4
+			c0,1.4-1.4,2.4-3,2.4s-2.8-0.8-3.2-2.4l1.1-0.4c0.2,0.7,0.6,1.7,2.1,1.7c1.1,0,1.8-0.4,1.8-1.3c0-0.4-0.1-1-1.8-1.3
+			c-1.6-0.3-2.9-0.8-2.9-2.4c0-1.5,1.3-2.3,2.9-2.3c1.6,0,2.6,0.9,2.9,2.3L155,434.3z"/>
+		<path d="M158.8,428.8c0.5,0,0.9,0.4,0.9,0.9s-0.4,0.9-0.9,0.9s-0.9-0.4-0.9-0.9C157.9,429.2,158.3,428.8,158.8,428.8z
+			 M158.2,431.9h1.2v7.8h-1.2V431.9z"/>
+		<path d="M165.4,439.9c-2.6,0-4-2.1-4-4.1c0-2.1,1.5-4.1,4-4.1c2.6,0,4,2.1,4,4.1S167.9,439.9,165.4,439.9z M165.4,438.8
+			c1.7,0,2.8-1.3,2.8-3s-1.2-3-2.8-3s-2.8,1.3-2.8,3C162.6,437.5,163.7,438.8,165.4,438.8z"/>
+		<path d="M176.6,434.9c0-1.7-0.8-2.1-1.9-2.1c-1.2,0-2.2,0.9-2.2,2.5v4.5h-1.2V432h1l0.2,1.1c0.6-0.8,1.5-1.3,2.6-1.3
+			c1.6,0,2.7,0.9,2.7,2.9v5.1h-1.2L176.6,434.9L176.6,434.9z"/>
+		<path d="M182.9,431.6c1.9,0,3.1,1,3.1,2.8v5.2h-1l-0.1-0.8c-0.4,0.6-1.2,1-2.4,1c-1.8,0-2.7-1.1-2.7-2.4c0-1.4,0.9-2.2,3-2.5
+			l2.1-0.3v-0.3c0-1.2-0.6-1.8-1.9-1.8c-1.3,0-1.8,0.7-2,1.6l-1.1-0.3C180.1,432.5,181.2,431.6,182.9,431.6z M184.8,435.7l-2,0.3
+			c-1.2,0.2-2,0.5-2,1.5c0,0.8,0.7,1.4,1.8,1.4s2.1-0.6,2.1-2L184.8,435.7L184.8,435.7z"/>
+		<path d="M188.7,431.9v-2h1.2v2h2.3v1.1h-2.3v5c0,0.6,0.3,0.8,0.9,0.8c0.5,0,0.8-0.2,0.8-0.3l0.6,0.9c-0.1,0.1-0.5,0.6-1.6,0.6
+			s-1.9-0.7-1.9-1.8V433h-1.5v-1.1H188.7z"/>
+		<path d="M196.9,439.9c-2.4,0-3.9-1.9-3.9-4.1c0-2.3,1.6-4.1,3.9-4.1c2.2,0,3.7,1.6,3.7,4v0.5h-6.4c0.1,1.6,1.1,2.8,2.7,2.8
+			c1.2,0,2.1-0.7,2.4-1.5l1.1,0.3C200,438.9,198.8,439.9,196.9,439.9z M199.5,435.1c-0.1-1.4-1.1-2.4-2.5-2.4
+			c-1.6,0-2.5,1.1-2.7,2.4H199.5z"/>
+	</g>
+	<g>
+		<path d="M407.7,250.7h6.8v1.1H409v3.9h4.9v1.1H409v4h5.5v1.1h-6.8V250.7z"/>
+		<path d="M421.8,257.1c0-1.7-0.8-2.1-1.9-2.1c-1.2,0-2.2,0.9-2.2,2.5v4.5h-1.2v-7.8h1l0.2,1.1c0.6-0.8,1.5-1.3,2.6-1.3
+			c1.6,0,2.7,0.9,2.7,2.9v5.1h-1.2V257.1z"/>
+		<path d="M425.8,254.1v-2h1.2v2h2.3v1.1H427v5c0,0.6,0.3,0.8,0.9,0.8c0.5,0,0.8-0.2,0.8-0.3l0.6,0.9c-0.1,0.1-0.5,0.6-1.6,0.6
+			s-1.9-0.7-1.9-1.8v-5.2h-1.5v-1.1L425.8,254.1L425.8,254.1z"/>
+		<path d="M434,262.1c-2.4,0-3.9-1.9-3.9-4.1c0-2.3,1.6-4.1,3.9-4.1c2.2,0,3.7,1.6,3.7,4v0.5h-6.4c0.1,1.6,1.1,2.8,2.7,2.8
+			c1.2,0,2.1-0.7,2.4-1.5l1.1,0.3C437,261.1,435.8,262.1,434,262.1z M436.5,257.3c-0.1-1.4-1.1-2.4-2.5-2.4c-1.6,0-2.5,1.1-2.7,2.4
+			H436.5z"/>
+		<path d="M444.3,254.3l-0.5,1c0,0-0.4-0.3-1.1-0.3c-1.1,0-2,1-2,2.5v4.4h-1.2v-7.8h1l0.2,1c0.4-0.7,1.1-1.3,2.1-1.3
+			C443.7,253.9,444.2,254.2,444.3,254.3z"/>
+		<path d="M445.5,254.1h1l0.2,1.2c0.5-0.7,1.4-1.4,2.8-1.4c2.4,0,3.7,2.1,3.7,4.1s-1.2,4.1-3.7,4.1c-1.3,0-2.2-0.6-2.8-1.4v4.5h-1.2
+			V254.1z M449.4,261.1c1.6,0,2.6-1.3,2.6-3c0-1.8-1.1-3.1-2.6-3.1c-1.6,0-2.6,1.3-2.6,3.1S447.8,261.1,449.4,261.1z"/>
+		<path d="M459.9,254.3l-0.5,1c0,0-0.4-0.3-1.1-0.3c-1.1,0-2,1-2,2.5v4.4h-1.2v-7.8h1l0.2,1c0.4-0.7,1.1-1.3,2.1-1.3
+			C459.3,253.9,459.8,254.2,459.9,254.3z"/>
+		<path d="M461.8,251c0.5,0,0.9,0.4,0.9,0.9s-0.4,0.9-0.9,0.9s-0.9-0.4-0.9-0.9S461.3,251,461.8,251z M461.2,254.1h1.2v7.8h-1.2
+			V254.1z"/>
+		<path d="M469.4,256.5c-0.2-0.8-0.7-1.5-1.8-1.5c-1.4,0-1.7,0.7-1.7,1.2c0,0.8,0.8,1,2,1.2c1.6,0.3,2.8,0.9,2.8,2.4
+			c0,1.4-1.4,2.4-3,2.4s-2.8-0.8-3.2-2.4l1.1-0.4c0.2,0.7,0.6,1.7,2.1,1.7c1.1,0,1.8-0.4,1.8-1.3c0-0.4-0.1-1-1.8-1.3
+			c-1.6-0.3-2.9-0.8-2.9-2.4c0-1.5,1.3-2.3,2.9-2.3s2.6,0.9,2.9,2.3L469.4,256.5z"/>
+		<path d="M473.2,251c0.5,0,0.9,0.4,0.9,0.9s-0.4,0.9-0.9,0.9s-0.9-0.4-0.9-0.9C472.3,251.4,472.7,251,473.2,251z M472.6,254.1h1.2
+			v7.8h-1.2V254.1z"/>
+		<path d="M481.5,257.1c0-1.7-0.8-2.1-1.9-2.1c-1.2,0-2.2,0.9-2.2,2.5v4.5h-1.2v-7.8h1l0.2,1.1c0.6-0.8,1.5-1.3,2.6-1.3
+			c1.6,0,2.7,0.9,2.7,2.9v5.1h-1.2V257.1z"/>
+		<path d="M484.5,257.9c0-2,1.3-4.1,3.7-4.1c1.4,0,2.2,0.6,2.7,1.3l0.2-1.1h1v7.9c0,1.7-1,3.5-3.8,3.5c-2,0-3.1-1.1-3.5-2.5l1.2-0.3
+			c0.3,1.1,1,1.7,2.3,1.7c1.8,0,2.6-1,2.6-2.4v-1.4c-0.4,0.8-1.4,1.4-2.7,1.4C485.8,262,484.5,259.9,484.5,257.9z M491,257.9
+			c0-1.8-1.1-3-2.6-3c-1.6,0-2.6,1.2-2.6,3s1.1,3,2.7,3C489.9,260.9,491,259.7,491,257.9z"/>
+	</g>
+	<g>
+		<path d="M319,61c-2.5,0-4.4,2-4.4,4.7c0,2.8,1.8,4.7,4.4,4.7c1.9,0,3.1-1,3.6-2.5l1.2,0.4c-0.7,2-2.4,3.3-4.8,3.3
+			c-3.3,0-5.7-2.4-5.7-5.8c0-3.3,2.4-5.8,5.6-5.8c2.4,0,4.2,1.4,4.9,3.5l-1.2,0.4C322.2,62,320.9,61,319,61z"/>
+		<path d="M330.6,63.7l-0.5,1c0,0-0.4-0.3-1.1-0.3c-1.1,0-2,1-2,2.5v4.4h-1.2v-7.8h1l0.2,1c0.4-0.7,1.1-1.3,2.1-1.3
+			C330.1,63.3,330.6,63.6,330.6,63.7z"/>
+		<path d="M335.1,71.6c-2.4,0-3.9-1.9-3.9-4.1c0-2.3,1.6-4.1,3.9-4.1c2.2,0,3.7,1.6,3.7,4v0.5h-6.4c0.1,1.6,1.1,2.8,2.7,2.8
+			c1.2,0,2.1-0.7,2.4-1.5l1.1,0.3C338.1,70.5,337,71.6,335.1,71.6z M337.6,66.7c-0.1-1.4-1.1-2.4-2.5-2.4c-1.6,0-2.5,1.1-2.7,2.4
+			H337.6z"/>
+		<path d="M343.4,63.3c1.9,0,3.1,1,3.1,2.8v5.2h-1l-0.1-0.8c-0.4,0.6-1.2,1-2.4,1c-1.8,0-2.7-1.1-2.7-2.4c0-1.4,0.9-2.2,3-2.5
+			l2.1-0.3V66c0-1.2-0.6-1.8-1.9-1.8s-1.8,0.7-2,1.6l-1.1-0.3C340.7,64.1,341.8,63.3,343.4,63.3z M345.4,67.3l-2,0.3
+			c-1.2,0.2-2,0.5-2,1.5c0,0.8,0.7,1.4,1.8,1.4c1.1,0,2.1-0.6,2.1-2v-1.2H345.4z"/>
+		<path d="M349.3,63.5v-2h1.2v2h2.3v1.1h-2.3v5c0,0.6,0.3,0.8,0.9,0.8c0.5,0,0.8-0.2,0.8-0.3l0.6,0.9c-0.1,0.1-0.5,0.6-1.6,0.6
+			s-1.9-0.7-1.9-1.8v-5.2h-1.5v-1.1H349.3z"/>
+		<path d="M355.2,60.4c0.5,0,0.9,0.4,0.9,0.9s-0.4,0.9-0.9,0.9s-0.9-0.4-0.9-0.9C354.2,60.8,354.6,60.4,355.2,60.4z M354.5,63.5h1.2
+			v7.8h-1.2V63.5z"/>
+		<path d="M364.6,63.5l-3,7.8h-1.3l-3-7.8h1.2l2.4,6.5l2.4-6.5H364.6z"/>
+		<path d="M369.3,71.6c-2.4,0-3.9-1.9-3.9-4.1c0-2.3,1.6-4.1,3.9-4.1c2.2,0,3.7,1.6,3.7,4v0.5h-6.4c0.1,1.6,1.1,2.8,2.7,2.8
+			c1.2,0,2.1-0.7,2.4-1.5l1.1,0.3C372.3,70.5,371.2,71.6,369.3,71.6z M371.8,66.7c-0.1-1.4-1.1-2.4-2.5-2.4c-1.6,0-2.5,1.1-2.7,2.4
+			H371.8z"/>
+	</g>
+	<g>
+		<path d="M116.5,68.2h-4.7l-1.2,3.1h-1.3l4.2-11.2h1.3l4.2,11.2h-1.3L116.5,68.2z M116.1,67.1l-2-5.3l-2,5.3H116.1z"/>
+		<path d="M125.9,66.5c0-1.7-0.8-2.1-1.9-2.1c-1.2,0-2.2,0.9-2.2,2.5v4.5h-1.2v-7.8h1l0.2,1.1c0.6-0.8,1.5-1.3,2.6-1.3
+			c1.6,0,2.7,0.9,2.7,2.9v5.1h-1.2V66.5z"/>
+		<path d="M132.2,63.3c1.9,0,3.1,1,3.1,2.8v5.2h-1l-0.1-0.8c-0.4,0.6-1.2,1-2.4,1c-1.8,0-2.7-1.1-2.7-2.4c0-1.4,0.9-2.2,3-2.5
+			l2.1-0.3V66c0-1.2-0.6-1.8-1.9-1.8c-1.3,0-1.8,0.7-2,1.6l-1.1-0.3C129.4,64.1,130.5,63.3,132.2,63.3z M134.1,67.3l-2,0.3
+			c-1.2,0.2-2,0.5-2,1.5c0,0.8,0.7,1.4,1.8,1.4s2.1-0.6,2.1-2L134.1,67.3L134.1,67.3z"/>
+		<path d="M137.4,60.1h1.2v11.2h-1.2V60.1z"/>
+		<path d="M147.6,63.5v7.9c0,1.7-0.9,3.5-3.4,3.5c-1.9,0-2.9-1-3.3-2.5l1.2-0.3c0.3,1.1,0.9,1.7,2.2,1.7c1.5,0,2.2-1,2.2-2.4v-1.2
+			v-0.1c-0.7,0.8-1.4,1.3-2.7,1.3c-1.4,0-2.8-0.8-2.8-2.9v-5h1.2v4.6c0,1.7,0.8,2.1,2,2.1c1.3,0,2.4-0.9,2.4-2.5v-4.3h1V63.5z"/>
+		<path d="M150.5,63.5v-2h1.2v2h2.3v1.1h-2.3v5c0,0.6,0.3,0.8,0.9,0.8c0.5,0,0.8-0.2,0.8-0.3L154,71c-0.1,0.1-0.5,0.6-1.6,0.6
+			s-1.9-0.7-1.9-1.8v-5.2H149v-1.1H150.5z"/>
+		<path d="M156.3,60.4c0.5,0,0.9,0.4,0.9,0.9s-0.4,0.9-0.9,0.9s-0.9-0.4-0.9-0.9C155.4,60.8,155.8,60.4,156.3,60.4z M155.7,63.5h1.2
+			v7.8h-1.2V63.5z"/>
+		<path d="M162.8,71.6c-2.6,0-4-2-4-4.1s1.5-4.1,4-4.1c1.8,0,3,1.1,3.4,2.4l-1.1,0.4c-0.4-1-1.2-1.7-2.3-1.7c-1.6,0-2.7,1.3-2.7,3
+			s1.1,3,2.7,3c1.1,0,2-0.7,2.3-1.7l1.1,0.4C165.8,70.5,164.6,71.6,162.8,71.6z"/>
+		<path d="M171,63.3c1.9,0,3.1,1,3.1,2.8v5.2h-1l-0.1-0.8c-0.4,0.6-1.2,1-2.4,1c-1.8,0-2.7-1.1-2.7-2.4c0-1.4,0.9-2.2,3-2.5l2.1-0.3
+			V66c0-1.2-0.6-1.8-1.9-1.8c-1.3,0-1.8,0.7-2,1.6l-1.1-0.3C168.3,64.1,169.3,63.3,171,63.3z M172.9,67.3l-2,0.3
+			c-1.2,0.2-2,0.5-2,1.5c0,0.8,0.7,1.4,1.8,1.4s2.1-0.6,2.1-2L172.9,67.3L172.9,67.3z"/>
+		<path d="M176.2,60.1h1.2v11.2h-1.2V60.1z"/>
+	</g>
+	<g>
+		<path d="M7.8,250.7h3.6c2.3,0,3.8,1.2,3.8,3.4c0,2.1-1.5,3.4-3.7,3.4H9v4.4H7.8V250.7z M11.3,256.4c1.5,0,2.6-0.7,2.6-2.3
+			s-1.1-2.3-2.6-2.3H9v4.5h2.3V256.4z"/>
+		<path d="M21.5,254.3l-0.5,1c0,0-0.4-0.3-1.1-0.3c-1.1,0-2,1-2,2.5v4.4h-1.2v-7.8h1l0.2,1c0.4-0.7,1.1-1.3,2.1-1.3
+			C21,253.9,21.4,254.2,21.5,254.3z"/>
+		<path d="M25.3,253.9c1.9,0,3.1,1,3.1,2.8v5.2h-1l-0.1-0.8c-0.4,0.6-1.2,1-2.4,1c-1.8,0-2.7-1.1-2.7-2.4c0-1.4,0.9-2.2,3-2.5
+			l2.1-0.3v-0.3c0-1.2-0.6-1.8-1.9-1.8s-1.8,0.7-2,1.6l-1.1-0.3C22.6,254.7,23.6,253.9,25.3,253.9z M27.2,257.9l-2,0.3
+			c-1.2,0.2-2,0.5-2,1.5c0,0.8,0.7,1.4,1.8,1.4c1.1,0,2.1-0.6,2.1-2v-1.2H27.2z"/>
+		<path d="M34.1,262.1c-2.6,0-4-2-4-4.1s1.5-4.1,4-4.1c1.8,0,3,1.1,3.4,2.4l-1.1,0.4c-0.4-1-1.2-1.7-2.3-1.7c-1.6,0-2.7,1.3-2.7,3
+			s1.1,3,2.7,3c1.1,0,2-0.7,2.3-1.7l1.1,0.4C37,261.1,35.9,262.1,34.1,262.1z"/>
+		<path d="M39.9,254.1v-2h1.2v2h2.3v1.1h-2.3v5c0,0.6,0.3,0.8,0.9,0.8c0.5,0,0.8-0.2,0.8-0.3l0.6,0.9c-0.1,0.1-0.5,0.6-1.6,0.6
+			s-1.9-0.7-1.9-1.8v-5.2h-1.5v-1.1L39.9,254.1L39.9,254.1z"/>
+		<path d="M45.7,251c0.5,0,0.9,0.4,0.9,0.9s-0.4,0.9-0.9,0.9s-0.9-0.4-0.9-0.9S45.2,251,45.7,251z M45.1,254.1h1.2v7.8h-1.2V254.1z"
+			/>
+		<path d="M52.3,262.1c-2.6,0-4-2-4-4.1s1.5-4.1,4-4.1c1.8,0,3,1.1,3.4,2.4l-1.1,0.4c-0.4-1-1.2-1.7-2.3-1.7c-1.6,0-2.7,1.3-2.7,3
+			s1.1,3,2.7,3c1.1,0,2-0.7,2.3-1.7l1.1,0.4C55.2,261.1,54,262.1,52.3,262.1z"/>
+		<path d="M60.4,253.9c1.9,0,3.1,1,3.1,2.8v5.2h-1l-0.1-0.8c-0.4,0.6-1.2,1-2.4,1c-1.8,0-2.7-1.1-2.7-2.4c0-1.4,0.9-2.2,3-2.5
+			l2.1-0.3v-0.3c0-1.2-0.6-1.8-1.9-1.8c-1.3,0-1.8,0.7-2,1.6l-1.1-0.3C57.7,254.7,58.7,253.9,60.4,253.9z M62.3,257.9l-2,0.3
+			c-1.2,0.2-2,0.5-2,1.5c0,0.8,0.7,1.4,1.8,1.4s2.1-0.6,2.1-2v-1.2H62.3z"/>
+		<path d="M65.6,250.7h1.2v11.2h-1.2V250.7z"/>
+	</g>
+	<g id="XMLID_4_">
+		<g id="XMLID_10_">
+			<rect x="124.1" y="7.7" style="fill:#00DAFF;" width="38.3" height="11.2"/>
+		</g>
+		<g id="XMLID_7_">
+			<rect x="124.1" y="21.2" style="fill:#00DAFF;" width="38.3" height="11.2"/>
+		</g>
+		<g id="XMLID_5_">
+			<rect x="124.1" y="34.8" style="fill:#00DAFF;" width="38.3" height="11.2"/>
+		</g>
+	</g>
+</g>
+</svg>
+
+
+<!-- tooltips-->
+        <div class="tooltip yellow">
+            <i class="fa fa-times closeTooltip" aria-hidden="true"></i>
+            <h2>Yellows are inventive</h2>
+            <h2>Yellows are expressive</h2>
+            <h2>Yellows speak before processing</h2>
+            <button class="yellow-button">Tell me more</button>
+        </div>
+
+        <div class="tooltip orange">
+            <i class="fa fa-times closeTooltip" aria-hidden="true"></i>
+            <h2>Oranges are action-focused</h2>
+            <h2>Oranges are optimistic and positive</h2>
+            <h2>Oranges are easily excitable</h2>
+            <button class="orange-button">Tell me more</button>
+        </div>
+
+        <div class="tooltip red">
+            <i class="fa fa-times closeTooltip" aria-hidden="true"></i>
+            <h2>Reds are entertainers</h2>
+            <h2>Reds are jokers</h2>
+            <h2>Reds are motivators.</h2>
+            <button class="red-button">Tell me more</button>
+        </div>
+
+        <div class="tooltip purple">
+            <i class="fa fa-times closeTooltip" aria-hidden="true"></i>
+            <h2>Purples are inclusive</h2>
+            <h2>Purples are caring</h2>
+            <h2>Purples think deeply</h2>
+            <button class="purple-button">Tell me more</button>
+        </div>
+
+        <div class="tooltip green">
+            <i class="fa fa-times closeTooltip" aria-hidden="true"></i>
+            <h2>Greens are technical</h2>
+            <h2>Greens are structured</h2>
+            <h2>Greens are composed.</h2>
+            <button class="green-button">Tell me more</button>
+        </div>
+
+        <div class="tooltip blue">
+            <i class="fa fa-times closeTooltip" aria-hidden="true"></i>
+            <h2>Blues are precise and specific</h2>
+            <h2>Blues are literal</h2>
+            <h2>Blues use facts and logic to convince you</h2>
+            <button class="blue-button">Tell me more</button>
+        </div>
+
+
+
+    </div>
+
+<!-- MODAL CONTENT -->
+    <div class="modal yellow" id="modal1">
+
+        <div class="modal-content">
+            <img src="img/yellow-icon.svg" class="icon">
+
+            <div class="container">
+                    <h1>Yellow language</h1>
+
+                    <h2>Here are 10 traits of a yellow</h2>
+
+                    <ul class="tag">
+                        <li class="tag-item">Think Creatively</li>
+                        <li class="tag-item">Unconventional</li>
+                        <li class="tag-item">Inventive</li>
+                        <li class="tag-item">Flexible</li>
+                        <li class="tag-item">Open-minded</li>
+                        <li class="tag-item">Imaginative</li>
+                        <li class="tag-item">Original</li>
+                        <li class="tag-item">Out of the box</li>
+                        <li class="tag-item">Experimental</li>
+                        <li class="tag-item">Visionary</li>
+                    </ul>
+
+                    <h2>Yellows are inventive</h2>
+                    <p>They will often have many thoughts running through their head at once and so jump from one topic to the next. </p>
+
+                    <h2>Yellows are expressive</h2>
+                    <p>They may use words that are unusual or complex and be very descriptive of things.</p>
+
+                    <h2>Yellows speak before processing</h2>
+                    <p>They might sometimes talk without a filter, saying anything that comes into their head, seeming to process it only once they have spoken, not before.</p>
+
+                    <button class="closeModal">Close</button>
+                </div>
+        </div>
+    </div>
+
+    <div class="modal orange" id="modal2">
+
+        <div class="modal-content">
+            <img src="img/orange-icon.svg" class="icon">
+
+            <div class="container">
+                    <h1>Orange language</h1>
+
+                    <h2>Here are 10 traits of an orange</h2>
+
+                    <ul>
+                        <li>Resourceful</li>
+                        <li>Business Savvy</li>
+                        <li>Optimistic</li>
+                        <li>Energising</li>
+                        <li>Experimental</li>
+                        <li>Self assured</li>
+                        <li>Opportunistic</li>
+                        <li>Bold</li>
+                        <li>Innovative</li>
+                        <li>Adaptable</li>
+                    </ul>
+
+                    <h2>Oranges are action-focused</h2>
+                    <p>They will use doing or action words more than other colours. They want to get to the point and are very good at focusing in on what they want.</p>
+
+                    <h2>Oranges are optimistic and positive</h2>
+                    <p>So, although they focus in on what they want, they will usually frame this in a positive way. Their language is typically upbeat.</p>
+
+                    <h2>Oranges are easily excitable</h2>
+                    <p>If an idea grabs them, they can get caught up in it and speak very enthusiastically.</p>
+
+                    <button class="closeModal">Close</button>
+                </div>
+        </div>
+    </div>
+
+    <div class="modal red" id="modal3">
+
+        <div class="modal-content">
+            <img src="img/red-icon.svg" class="icon">
+
+            <div class="container">
+                    <h1>Red language</h1>
+
+                    <h2>Here are 10 traits of a red</h2>
+
+                    <ul>
+                        <li>Sociable</li>
+                        <li>Entertaining</li>
+                        <li>Expressive</li>
+                        <li>People person</li>
+                        <li>Team focused</li>
+                        <li>Demonstrative</li>
+                        <li>Spontaneous</li>
+                        <li>Fun</li>
+                        <li>Magnetic</li>
+                        <li>Charismatic</li>
+                    </ul>
+
+                    <h2>Reds are entertainers</h2>
+                    <p>They are bubbly, humourous and want to entertain anyone they interact with.</p>
+
+                    <h2>Reds are jokers</h2>
+                    <p>They sometimes give the sense of not taking anything seriously as they take any excuse to make a joke or distract.</p>
+
+                    <h2>Reds are motivators</h2>
+                    <p>They can bring groups of people together and inspire people through their natural flair and engaging personality.</p>
+
+                    <button class="closeModal">Close</button>
+                </div>
+        </div>
+    </div>
+
+    <div class="modal purple" id="modal4">
+
+        <div class="modal-content">
+            <img src="img/purple-icon.svg" class="icon">
+
+            <div class="container">
+                    <h1>Purple language</h1>
+
+                    <h2>Here are 10 traits of a purple</h2>
+
+                    <ul>
+                        <li>Humanitarian</li>
+                        <li>Understanding</li>
+                        <li>Wise</li>
+                        <li>Inclusive</li>
+                        <li>Compassionate</li>
+                        <li>Empathetic</li>
+                        <li>Optimistic</li>
+                        <li>Environmentally friendly</li>
+                        <li>Deep-thinking</li>
+                        <li>Spiritual</li>
+                    </ul>
+
+                    <h2>Purples are inclusive</h2>
+                    <p>They like to ensure that they are using language that engages and includes whoever they are interacting with. </p>
+
+                    <h2>Purples are caring</h2>
+                    <p>It is important for them to ask questions of other people to gauge their mood or take on things.</p>
+
+                    <h2>Purples think deeply</h2>
+                    <p>They will like to express or discuss feelings or how things matter in the grand scheme of things.</p>
+
+                    <button class="closeModal">Close</button>
+                </div>
+        </div>
+    </div>
+
+    <div class="modal green" id="modal5">
+
+        <div class="modal-content">
+            <img src="img/green-icon.svg" class="icon">
+
+            <div class="container">
+                    <h1>Green language</h1>
+
+                    <h2>Here are 10 traits of a green</h2>
+
+                    <ul>
+                        <li>Trustworthy</li>
+                        <li>Practical</li>
+                        <li>Process-Driven</li>
+                        <li>Diligent</li>
+                        <li>Dedicated</li>
+                        <li>Organsied</li>
+                        <li>Structured</li>
+                        <li>Methodical</li>
+                        <li>Composed</li>
+                        <li>Meticulous</li>
+                    </ul>
+
+                    <h2>Greens are technical</h2>
+                    <p>The language of a dominant green person will be very technical and practical. They like to understand what they are talking about to a high degree of detail. So, when they talk to you, they want to convey that they know what they are talking about. With this in mind, they are often very conscious of using the appropriate language to demonstrate knowledge or understanding. They might not be as likely to use slang or speak colloquially.</p>
+
+                    <h2>Greens are structured</h2>
+                    <p>They might use bullet points, numbering or headings.</p>
+
+                    <h2>Greens are composed</h2>
+                    <p>They will very rarely get lost or flustered because they know what they are trying to say. They won’t waste energy with ‘filler’ words either.</p>
+                    <button class="closeModal">Close</button>
+                </div>
+        </div>
+    </div>
+
+    <div class="modal blue" id="modal6">
+
+        <div class="modal-content">
+            <img src="img/blue-icon.svg" class="icon">
+
+            <div class="container">
+                    <h1>Blue language</h1>
+
+                    <h2>Here are 10 traits of a blue</h2>
+
+                    <ul>
+                        <li>Confident</li>
+                        <li>Motivated</li>
+                        <li>Focused</li>
+                        <li>Independent</li>
+                        <li>Accurate</li>
+                        <li>Logical</li>
+                        <li>Factual</li>
+                        <li>Decisive</li>
+                        <li>Rational</li>
+                        <li>Analytical</li>
+                    </ul>
+
+                    <h2>Blues are precise and specific</h2>
+                    <p>This means if there are a number of items, they will say the exact number, not ‘some’ or ‘a couple’ or ‘a few'.</p>
+
+                    <h2>Blues are literal</h2>
+                    <p>They are going to tell you exactly what they want you to know, or if you asked for something they will take it literally and answer exactly what you asked for.</p>
+
+                    <h2>Blues use facts and logic to convince you</h2>
+                    <p>They present things in a factual and un-emotive fashion, they believe in giving the facts and letting that convince you. They won’t try to bring emotion into proving a point, they will deliver the information that they think is comprehensive enough.</p>
+
+                    <button class="closeModal">Close</button>
+                </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,490 @@
+/*Last updated - Tony Waddington, 15/08/16 2.43pm*/
+
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'ModernEra-Black';
+  src: url('fonts/ModernEra-Black.otf')
+}
+
+@font-face {
+  font-family: 'ModernEra-Italic';
+  src: url('fonts/ModernEra-Italic.otf')
+}
+
+@font-face {
+  font-family: 'ModernEra-Regular';
+  src: url('fonts/ModernEra-Regular.otf')
+}
+
+@font-face {
+  font-family: 'ModernEraMono-Regular';
+  src: url('fonts/ModernEraMono-Regular.otf')
+}
+
+body, html {
+        font-family: "ModernEra-Regular", arial, helvetica, sans-serif;
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    color: #000000;
+    }
+
+
+h1 {
+    margin-top: 2px;
+    font-family: "ModernEra-Black", arial, helvetica, sans-serif;
+    line-height: 36px;
+    font-size: 40px;
+}
+
+h2 {
+    font-family: "ModernEra-Black", arial, helvetica, sans-serif;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+header {
+    background-image: url(../img/logo.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 20px) 10px;
+    border-bottom: #000 solid 1px;
+}
+
+header h1 {
+    padding: 15px;
+    margin: 0;
+    font-size: 20px;
+    font-family: "ModernEraMono-Regular", "Courier New", Courier, monospace;
+    
+}
+
+.instruction {
+    border-top: #000 solid 2px;
+    text-align: center;
+    padding-top:10px;
+    padding-bottom: 10px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 17px
+}
+
+.svgContainer {
+    position: relative;
+    top: 0px;
+    margin: 0 auto;
+    width: 1000px;
+    height: 1000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+#hexagon {
+    height: 100%;
+    max-height:1000px;
+    width: 100%;
+    max-width:1000px;
+    min-height: 300px;
+}
+
+.tooltip {
+    position: absolute;
+    width: 300px;
+    padding: 15px;
+    right: calc(50% - 125px);
+    -webkit-transform: scale(0) translateX(0%);
+        -ms-transform: scale(0) translateX(0%);
+            transform: scale(0) translateX(0%);
+    -webkit-transition: 0.3s -webkit-transform;
+    transition: 0.3s -webkit-transform;
+    -o-transition: 0.3s transform;
+    transition: 0.3s transform;
+    transition: 0.3s transform, 0.3s -webkit-transform;
+    border: 3px solid #000;
+}
+
+.tooltip h2 {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.tooltip.yellow.active {
+    -webkit-transform: scale(1) translate(60%, -150%);
+        -ms-transform: scale(1) translate(60%, -150%);
+            transform: scale(1) translate(60%, -150%); 
+}
+.tooltip.orange.active {
+    -webkit-transform: scale(1) translate(115%, 0%);
+        -ms-transform: scale(1) translate(115%, 0%);
+            transform: scale(1) translate(115%, 0%); 
+}
+.tooltip.red.active {
+    -webkit-transform: scale(1) translate(60%, 150%);
+        -ms-transform: scale(1) translate(60%, 150%);
+            transform: scale(1) translate(60%, 150%); 
+}
+.tooltip.purple.active {
+    -webkit-transform: scale(1) translate(-53%, 150%);
+        -ms-transform: scale(1) translate(-53%, 150%);
+            transform: scale(1) translate(-53%, 150%); 
+}
+.tooltip.green.active {
+    -webkit-transform: scale(1) translate(-105%, 0%);
+        -ms-transform: scale(1) translate(-105%, 0%);
+            transform: scale(1) translate(-105%, 0%); 
+}
+.tooltip.blue.active {
+    -webkit-transform: scale(1) translate(-53%, -150%);
+        -ms-transform: scale(1) translate(-53%, -150%);
+            transform: scale(1) translate(-53%, -150%); 
+}
+
+.tooltip i {
+    font-size: 25px;
+}
+
+.tooltip i:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.clickable:hover {
+    cursor: pointer;
+}
+#yellow, #orange, #red, #purple, #blue, #green {
+    -webkit-transition: .1s 0s ease-in-out;
+    -o-transition: .1s 0s ease-in-out;
+    transition: .1s 0s ease-in-out;
+}
+
+.tooltip.yellow {
+    background-color: rgba(255,244,0,1);
+}
+.tooltip.orange {
+    background-color: rgba(255,192,0,1);
+}
+.tooltip.red {
+    background-color: rgba(255,33,0,1);
+}
+.tooltip.purple {
+    background-color: rgba(130,79,249,1);
+}
+.tooltip.green {
+    background-color: rgba(0,255,198,1);
+}
+.tooltip.blue {
+    background-color: rgba(0,218,255,1);
+}
+
+#yellow:hover, #yellow.active  {
+    fill: rgba(255,244,0,0.9)!important;
+}
+
+#orange:hover, #orange.active  {
+    fill: rgba(255,192,0,0.9)!important;
+}
+
+#red:hover, #red.active {
+    fill: rgba(255,33,0,0.9)!important;
+}
+
+#purple:hover, #purple.active  {
+    fill: rgba(130,79,249,0.9)!important;
+}
+
+#green:hover, #green.active {
+    fill: rgba(0,255,198,0.9)!important;
+}
+
+#blue:hover, #blue.active {
+    fill: rgba(0,218,255,0.9)!important;
+}
+
+/* modal content */
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: scroll;
+    padding: 30px 20px 20px 20px;
+    height: 100%;
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */ /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.modal.yellow {
+    background: rgba(255,244,0,0.96);
+}
+
+.modal.orange {
+    background: rgba(255,192,0,0.96);
+}
+
+.modal.red {
+    background: rgba(255,33,0,0.96);
+}
+
+.modal.purple {
+    background: rgba(130,79,249,0.96);
+}
+
+.modal.blue {
+    background: rgba(0,218,255,0.96);
+}
+
+.modal.green {
+    background: rgba(0,255,198,0.96);
+}
+
+.modal-content {
+    position: relative;
+    max-width: 800px;
+    width: calc(100% - 40px);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.container {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    z-index: 0;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 5px;
+    display: inline-block;
+    margin: 5px;
+    background-color: #fff799;
+    font-size: 15px;
+}
+
+.orange li {
+    background-color: #ffe499;
+}
+
+.red li {
+    background-color: #ffa399;
+}
+
+.purple li {
+    background-color: #cbbbfc;
+}
+
+.blue li {
+    background-color: #99f5ff;
+}
+
+.green li {
+    background-color: #99ffe4;
+}
+.closeModal, .tooltip button {
+    font-family: "ModernEraMono-Regular", "Courier New", Courier, monospace;
+    text-align: center;
+    cursor:pointer;
+    background-color: transparent;
+    color: #000;
+    padding: 10px 25px;
+    margin-top: 20px;
+    font-size: 20px;  
+    border: 2px solid #000;
+    -webkit-transition: background-color .1s 0s ease-in-out, border-color .1s 0s ease-in-out;
+    -o-transition: background-color .1s 0s ease-in-out, border-color .1s 0s ease-in-out;
+    transition: background-color .1s 0s ease-in-out, border-color .1s 0s ease-in-out;
+}
+
+.closeModal:hover, button:hover {
+    background-color: #fff;
+    cursor: pointer;
+    border-color: #fff;
+    -webkit-transition: background-color .1s 0s ease-in-out, border-color .1s 0s ease-in-out;
+    -o-transition: background-color .1s 0s ease-in-out, border-color .1s 0s ease-in-out;
+    transition: background-color .1s 0s ease-in-out, border-color .1s 0s ease-in-out;
+}
+
+.tooltip button {
+    margin: 10px auto 0;
+    font-size: 14px;
+    }
+
+.modal-content p {
+    margin-bottom: 0;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+@media only screen and (max-height: 780px) {
+    .modal {
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+    }
+    
+    .modal-content {
+        margin-top: 20px;
+    }
+}
+@media only screen and (max-height: 500px) {
+    #hexagon {
+            -ms-flex-item-align: start;
+                align-self: flex-start;
+    }
+}
+
+@media only screen and (max-width: 1000px), screen and (max-height: 1050px) {
+
+    .svgContainer {
+        width: 600px;
+        height: 600px;
+    }
+    .tooltip.yellow.active {
+        -webkit-transform: scale(1) translate(60%, -60%);
+            -ms-transform: scale(1) translate(60%, -60%);
+                transform: scale(1) translate(60%, -60%); 
+
+    }
+    .tooltip.red.active {
+        -webkit-transform: scale(1) translate(60%, 60%);
+            -ms-transform: scale(1) translate(60%, 60%);
+                transform: scale(1) translate(60%, 60%);
+    }
+    .tooltip.orange.active {
+        -webkit-transform: scale(1) translate(60%, 0%);
+            -ms-transform: scale(1) translate(60%, 0%);
+                transform: scale(1) translate(60%, 0%);
+    }
+    
+    .tooltip.purple.active {
+        -webkit-transform: scale(1) translate(-50%, 60%);
+            -ms-transform: scale(1) translate(-50%, 60%);
+                transform: scale(1) translate(-50%, 60%); 
+
+    }
+    .tooltip.green.active {
+        -webkit-transform: scale(1) translate(-50%, 0%);
+            -ms-transform: scale(1) translate(-50%, 0%);
+                transform: scale(1) translate(-50%, 0%);
+    }
+    .tooltip.blue.active {
+        -webkit-transform: scale(1) translate(-50%, -60%);
+            -ms-transform: scale(1) translate(-50%, -60%);
+                transform: scale(1) translate(-50%, -60%);
+    }
+
+}
+
+@media only screen and (max-height: 650px) {
+    .svgContainer {
+        height: 450px;
+    }
+    
+    .tooltip.yellow.active {        
+        -webkit-transform: scale(1) translate(40%, -60%);        
+            -ms-transform: scale(1) translate(40%, -60%);        
+                transform: scale(1) translate(40%, -60%); 
+    }
+    .tooltip.orange.active {
+        -webkit-transform: scale(1) translate(40%, 0%);
+            -ms-transform: scale(1) translate(40%, 0%);
+                transform: scale(1) translate(40%, 0%); 
+    }
+    .tooltip.red.active {
+        -webkit-transform: scale(1) translate(40%, 60%);
+            -ms-transform: scale(1) translate(40%, 60%);
+                transform: scale(1) translate(40%, 60%);
+    }
+    .tooltip.purple.active {
+        -webkit-transform: scale(1) translate(-25%, 30%);
+            -ms-transform: scale(1) translate(-25%, 30%);
+                transform: scale(1) translate(-25%, 30%);
+    }
+    .tooltip.green.active {
+        -webkit-transform: scale(1) translate(-25%, 0%);
+            -ms-transform: scale(1) translate(-25%, 0%);
+                transform: scale(1) translate(-25%, 0%);
+    }
+    .tooltip.blue.active {
+        -webkit-transform: scale(1) translate(-25%, -55%);
+            -ms-transform: scale(1) translate(-25%, -55%);
+                transform: scale(1) translate(-25%, -55%);
+    }
+}
+
+@media only screen and (max-width: 660px){
+    .svgContainer {
+        width: 100%;
+    }
+    
+    .tooltip.yellow.active {        
+        -webkit-transform: scale(1) translate(20%, -60%);        
+            -ms-transform: scale(1) translate(20%, -60%);        
+                transform: scale(1) translate(20%, -60%); 
+    }
+    .tooltip.orange.active {
+        -webkit-transform: scale(1) translate(20%, 0%);
+            -ms-transform: scale(1) translate(20%, 0%);
+                transform: scale(1) translate(20%, 0%); 
+    }
+    .tooltip.red.active {
+        -webkit-transform: scale(1) translate(20%, 60%);
+            -ms-transform: scale(1) translate(20%, 60%);
+                transform: scale(1) translate(20%, 60%);
+    }
+    .tooltip.purple.active {
+        -webkit-transform: scale(1) translate(-5%, 60%);
+            -ms-transform: scale(1) translate(-5%, 60%);
+                transform: scale(1) translate(-5%, 60%);
+    }
+    .tooltip.green.active {
+        -webkit-transform: scale(1) translate(-5%, 0%);
+            -ms-transform: scale(1) translate(-5%, 0%);
+                transform: scale(1) translate(-5%, 0%);
+    }
+    .tooltip.blue.active {
+        -webkit-transform: scale(1) translate(-5%, -60%);
+            -ms-transform: scale(1) translate(-5%, -60%);
+                transform: scale(1) translate(-5%, -60%);
+    }
+    
+}
+
+
+@media only screen and (max-width: 500px) {
+    
+    .modal {
+        padding: 0;
+    }
+}
